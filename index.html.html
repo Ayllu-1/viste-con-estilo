@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rosita - Landing Page</title>
+		<link href="https://fonts.googleapis.com/css?family=Heebo:400,700IBM+Plex+Sans:600" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link href="https://unpkg.com/tailwindcss@2/dist/tailwind.min.css" rel="stylesheet">
+
+		<script type="text/javascript">
+			function validar(){
+				var form = document.form;
+				if(form.nombre.value==0){
+					alert("el campo nombre esta vacio");
+					form.nombre.value="";
+					form.nombre.focus();
+					return false;
+				
+				}
+				if(form.apellido.value==0){
+					alert("el campo apellido esta vacio");
+					form.apellido.value="";
+					form.apellido.focus();
+					return false;
+				
+				}
+				if(form.correo.value==0){
+					alert("el campo email esta vacio");
+					form.correo.value="";
+					form.correo.focus();
+					return false;
+				
+				}
+				if(form.mensaje.value==0){
+					alert("el campo mensaje esta vacio");
+					form.mensaje.value="";
+					form.mensaje.focus();
+					return false;
+				
+				}
+														
+			}
+		</script>
+	</head>
+	<body>
+		<div class="card">
+			<header>
+				<nav class="navbar navbar-dark bg-dark">
+					<div class="container-fluid">
+						<a class="navbar-brand"> AYLLU</a>
+						<button class="btn btn-outline-light" type="button" onclick="$('#modal_registro').modal('show');">hoy dia </button>
+					</div>
+				</nav>
+			</header>
+			<main>
+				<div class="container mt-2">
+					<div class="row">
+						<div class="col-md-3 grid shadow-2xl">
+							<div class="relative px-4 pt-90 pb-3 rounded-xl" >
+								<br>   
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/Fg70N8hqLqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="col-md-3 grid shadow-2xl">
+							<div class="relative px-4 pt-90 pb-3 rounded-xl" >
+							</div>
+						</div>
+						<div class="col-md-6 grid ">
+							<div class="card p-3 bg-gray-100 rounded-xl p-8 shadow-2xl">
+								<h1 class="text-lg font-semibold capitalize text-3xl text-gray-400">¿quieres vestir con sentido?</h1>
+								<p class="text-gray-500 p-3">Te invitamos para que te inscribas a una nueva forma de vestir ingresa y forma parte de un mundo sin desechos textiles, solo deja tus datos y te contactaremos </p>
+								<div class="hero-cta">
+									<form name="form" action="#" method="POST" onsubmit="return validar();">
+									<div class="row g-3">
+										<div class="col-sm-6">
+											<label id="firstName" class="">Nombre</label>
+											<input type="text" class="form-control" id="nombre" placeholder="ingresa tu nombre" value="" ><br>
+										</div>
+										<div class="col-sm-6">
+											<label id="lastName" class="">Apellido</label>
+											<input type="text" class="form-control" id="apellido" placeholder="ingresa tu apellido" value="" ><br>
+										</div>
+										<div class="col-12">
+											<label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+											<input type="email" class="form-control" id="email" placeholder="ingresa tu email"><br>
+										</div>
+										<div class="col-12">
+											<label id="mensaje" class="form-label">Mensaje <span class="text-muted">(Opcional)</span></label>
+											<textarea name="mensaje" rows="3" cols="35" placeholder="ingresa tu mensaje"></textarea><br>
+										</div>
+										<button class="w-100 btn btn-primary btn-lg mt-2" type="submit" onclick="validar();">Enviar información</button>
+									</div>
+								</form>
+								</div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+										
+		<section>
+      <h5>mis productos</h5>
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/falda.jpg" class="rounded mx-auto d-block" alt="falda">
+					</div>
+					<div class="carousel-item">
+						<img src="img/bolso-buo.JPG" class="rounded mx-auto d-block" alt="bolso">
+					</div>
+					<div class="carousel-item">
+						<img src="img/lana.jpg" class="rounded mx-auto d-block" alt="lana">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
+	
+		<section>
+			<div class="container">
+				<div class="card p-3 mt-3 shadow-2xl">
+					<div class="row">
+						<div class="col-md-3  grid  max-w-6xl justify-items-center">
+							<img width="300" class="p-2" src="img/contamina.jpg" alt="ROPA">
+						</div>
+						<div class="col-md-8 grid ">
+							<h2 id="seccion_conocer_mas" class="mt-2 capitalize text-3xl text-gray-400">¿saves cuanto contamina la industria textil?</h2>
+						<ul>
+							<li>La industria textil es la segunda mas contaminantedespues de la industria del petroleo</li>
+							<li class="fw-lighter text-start">La industria textil es la responsable del 20% de la contaminacion del agua</li>
+							<li class="fw-lighter text-start">El 73% de la ropa termina en vertederos</li>
+						</ul>
+							<div class="alert alert-info">
+								<span class="text-4xl mt-3 mb-3 justify-items-center"> AYLLU  significa comunidad y lo que hacemos es</span>
+							</div>
+							<div class="card row border-0 mt-3 ">
+								<div class="card mb-3 p-3 ">
+									<div class="row g-0 p-3">
+										<div class="col-md-4 grid max-w-6xl justify-items-center shadow-2xl p-2">
+											<img class="asset-light"  src="img/ropa.jpg" alt="recicla">
+										</div>
+										<div class="col-md-8">
+											<div class="card-body">
+												<h5 class="card-title">Vendemos</h5>
+												<p class="card-text fw-lighter">Ropa y Zapatos ademas elaboramos mochilas, bolsos, bananos con la ropa deteriorada</p>
+												<p class="card-text"><small class="text-muted">Conoce mas en wikipedia <a target="_blank" href="https://es.wikipedia.org/wiki/HTML5">ver contenido</a></small></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-3">
+									<div class="row g-0 p-3">
+										<div class="col-md-4 grid max-w-6xl shadow-2xl justify-items-center p-2">
+											<img class="asset-light" src="img/dona.jpg" alt="Feature 02">
+										</div>
+										<div class="col-md-8">
+											<div class="card-body">
+												<h5 class="card-title">Donamos</h5>
+												<p class="card-text fw-lighter">Donamos un tercio de la ropa en buen estado</p>
+												<p class="card-text"><small class="text-muted">conoce mas de bootstrap 5 en wikipedia <a target="_blank" href="https://es.wikipedia.org/wiki/Bootstrap_(framework)">ir al contenido</a></small></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-3">
+									<div class="row g-0 p-3">
+										<div class="col-md-4 max-w-6xl shadow-2xl grid justify-items-center p-2">
+											<img class="asset-light"  src="img/mochila.jpg" alt=" jeas">
+										</div>
+										<div class="col-md-8">
+											<div class="card-body">
+												<h5 class="card-title">Reciclamos</h5>
+												<p class="card-text fw-lighter">combertimos las prendas rotas o manchadas en mochilas, bananos, bolsos. etc.<br/>
+												</p>
+												<p class="card-text"><small class="text-muted">conoce más de Jquery con Ajax en wikipedia <a target="_blank" href="https://es.wikipedia.org/wiki/Ajax_framework">ir al contenido</a></small></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			</div>
+		</section>
+	
+		<footer class="bg-dark text-center text-white">
+		<!-- Grid container -->
+		<div class="container p-4 pb-0">
+		<!-- Section: Social media -->
+		<section>
+		<!-- Facebook -->
+		<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+			><i class="fab fa-facebook-f"></i
+			></a>
+		<!-- Twitter -->
+		<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+			><i class="fab fa-twitter"></i
+			></a>
+		<!-- Google -->
+		<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+			><i class="fab fa-google"></i
+			></a>
+		<!-- Instagram -->
+		<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+			><i class="fab fa-instagram"></i
+			></a>
+		<!-- Linkedin -->
+		<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+			><i class="fab fa-linkedin-in"></i
+			></a>
+		<!-- Github -->
+		<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+			><i class="fab fa-github"></i
+			></a>
+		</section>
+		
+		<!-- Section: Social media -->
+		</div>
+		<!-- Grid container -->
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		© 2020 Copyright:
+		<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+		</div>
+		<!-- Copyright -->
+		</footer>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+		
